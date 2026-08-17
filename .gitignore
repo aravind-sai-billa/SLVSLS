@@ -1,6 +1,5 @@
-# Dependencies
+﻿# Dependencies
 node_modules/
-frontend/node_modules/
 
 # Build output
 dist/
@@ -11,14 +10,22 @@ frontend/dist/
 .env.*
 !.env.example
 
-# Logs
-*.log
+# Python virtual environment
+backend/.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# IDE
-.vscode/
-!.vscode/extensions.json
-!.vscode/settings.json
